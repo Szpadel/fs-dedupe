@@ -1,0 +1,27 @@
+{
+  "name": "fs-dedupe",
+  "version": "0.1.1",
+  "description": "Deduplicate files in directory",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "bin": {
+    "fs-dedupe": "./bin/fs-dedupe"
+  },
+  "scripts": {
+    "prepare": "yarn run build",
+    "build": "tsc",
+    "start": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/fs-extra-promise": "^1.0.8",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^13.7.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "commandpost": "^1.4.0",
+    "fs-extra-promise": "^1.0.1",
+    "glob": "^7.1.6"
+  }
+}
